@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 655px) {
+  .home {
+      /* Styles specific to .home when the screen width is 655px or less */
+      display: flex;
+      flex-direction: column;
+  }
+  .filter{
+     display: flex;
+     flex-shrink: inherit;
+     margin-left: 20%;
+  }
+  .cart{
+    display: flex;
+      flex-direction: column;
+  }
+}
