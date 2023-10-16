@@ -25,7 +25,7 @@ const Filter = () => {
         setCategoryList(prevList => [...prevList, item.category])
       }
     })
-  }, [])
+  }, [data])
 
   const handleCategoryToggle = category => {
     if (categories.includes(category)) {
